@@ -7,6 +7,7 @@ import ru.job4j.links.model.Link;
 import ru.job4j.links.model.User;
 import ru.job4j.links.repo.LinkRepository;
 
+import javax.transaction.Transactional;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import java.util.List;
@@ -26,11 +27,11 @@ public class LinkService {
                 });
     }
 
+    @Transactional
     public Link getByCode(@Valid @NotBlank String code) throws LinkException {
         Link link = links.findByCode(code)
                 .orElseThrow(() -> new LinkException("code not found"));
-        link.setCount(link.getCount() + 1);
-        links.save(link);
+        links.incCounter(link.getId());
         return link;
     }
 
