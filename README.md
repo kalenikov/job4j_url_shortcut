@@ -11,3 +11,7 @@ Used technologies:
 - Postgresql
 
 ![](https://img.shields.io/badge/java-%3E%3D%208%20-orange)
+
+Launching the application
+
+mvn package -Dmaven.test.skip && docker build -t shortcut . && docker-compose up

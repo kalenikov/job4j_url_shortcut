@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS links;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS roles;
+
 CREATE TABLE roles
 (
     id   serial primary key,
