@@ -1,6 +1,6 @@
 # job4j_url_shortcut
 
-[![Build Status](https://app.travis-ci.com/kalenikov/job4j_url_shortcut.svg?branch=main)](https://app.travis-ci.com/kalenikov/job4j_url_shortcut)
+[![Build Status](https://app.travis-ci.com/kalenikov/job4j_url_shortcut.svg?branch=master)](https://app.travis-ci.com/kalenikov/job4j_url_shortcut)
 
 ### Project description
 
