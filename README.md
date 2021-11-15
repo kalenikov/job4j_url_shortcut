@@ -14,8 +14,6 @@ This project represent url shortener rest-service with jwt-authorization
 * Spring Data JPA
 * PostgreSQL
 
-![](https://img.shields.io/badge/java-%3E%3D%208%20-orange)
-
 ### Run project
 
 #### Using Docker
